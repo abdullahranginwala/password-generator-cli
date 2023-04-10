@@ -1,7 +1,7 @@
  const alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
  const num = '0123456789';
  const symbols = '!@#$%^&*()_+-=<>?'
- const createPassword = (length, hasNumbers, hasSymbols ) => {
+ export const createPassword = (length, hasNumbers, hasSymbols ) => {
      let chars = alpha;
      chars += hasNumbers? num: '';
      chars += hasSymbols? symbols: '';
@@ -14,5 +14,3 @@
      
      return password;
  }
-
-module.exports = createPassword;
